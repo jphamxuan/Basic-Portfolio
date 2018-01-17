@@ -18,17 +18,21 @@
                 
         }
     
-        header {
+        header {width: 960px;
                 background: white;
                 font-size: 40px;
                 text-align: center;
-                margin: auto;
+                margin:0 auto;
+                padding: 40px;  
+                padding-top:0;
+                
         }
-        h1, h2 {border-bottom: solid 1px #666;
+        h1, h2 {border-bottom: solid 1px lightgrey;
         }
-        h1{ padding-top: 10px;
+        h1, h2{ padding-top: 10px;
             padding-bottom: 15px;
         }
+        h2{ padding-top:0;}
         
         #header-right{float: left; 
                         width: 30%;
@@ -48,21 +52,29 @@
                 margin-right: 10px;     
         }
         #about-me {width: 650px;
-                    margin: 20px;
                     background: white;
                     float: left;
-                    padding: 10px;
-
+                    padding: 25px;
         }
         #sidebar {width: 270px;
-                float: left;
+                float: right;
                 background: white;
                 margin-top: 20px;
                 padding: 10px;
                 text-align: center;
-
+    
         }
-            </style>
+        #stuff { background: #4aaaa5;
+                color: white;
+                float: left;
+                margin-left: -40px;
+                padding: 20px;
+        }   
+        .head {width:100%;
+                background: white;
+        }
+        #contact {float:right;}
+         </style>
            
             
         <meta charset="utf-8">
@@ -72,13 +84,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div>
-            <header id="stuff">Josiah Pham
-             
+        <div class="head">
+            <header >
+               <div >
+                <section id="stuff">Josiah Pham
+                </section>
+                <section id="contact">
                 <a href="#" style="text-decoration : none; color :darkgrey; font-size: 20px">About</a>
                 <a href="#" style="text-decoration : none; color :darkgrey; font-size: 20px">Portfolio</a>
                 <a href="#" style="text-decoration : none; color :darkgrey; font-size: 20px">Contact</a>
-                
+                </section>
+                </div>
            </header> 
         </div>  
         <div id="main">
