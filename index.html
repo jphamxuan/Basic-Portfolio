@@ -10,12 +10,58 @@
             <link href="style.css" rel="stylesheet" type="text/css">
 
     <style>
-          
-            footer {
+        
+        * {box-sizing: border-box;
+        }
+        #main { width: 960px;
+                margin: auto;
+                
+        }
+    
+        header {
+                background: white;
+                font-size: 40px;
+                text-align: center;
+                margin: auto;
+        }
+        h1, h2 {border-bottom: solid 1px #666;
+        }
+        h1{ padding-top: 10px;
+            padding-bottom: 15px;
+        }
+        
+        #header-right{float: left; 
+                        width: 30%;
+        }
+        footer {
                 text-align: center;
                 height: 100px;
-            }
-           
+        }
+        body{background: lightgray;
+        }
+        #picture{float: left;
+                width: 150px;
+                height: 150px;
+                background: grey;
+                padding: 20px;
+                border: 20px;   
+                margin-right: 10px;     
+        }
+        #about-me {width: 650px;
+                    margin: 20px;
+                    background: white;
+                    float: left;
+                    padding: 10px;
+
+        }
+        #sidebar {width: 270px;
+                float: left;
+                background: white;
+                margin-top: 20px;
+                padding: 10px;
+                text-align: center;
+
+        }
             </style>
            
             
@@ -26,18 +72,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <h1>Josiah Pham</h1>
-        <h2>About Me</h2>
-        <p>My name is Josiah Pham and I'm on my journey to become a coder. Currently, I'm working part time at Mt. SAC up in Walnut, CA as an Adjunct ESL professor.
+        <div>
+            <header id="stuff">Josiah Pham
+             
+                <a href="#" style="text-decoration : none; color :darkgrey; font-size: 20px">About</a>
+                <a href="#" style="text-decoration : none; color :darkgrey; font-size: 20px">Portfolio</a>
+                <a href="#" style="text-decoration : none; color :darkgrey; font-size: 20px">Contact</a>
+                
+           </header> 
+        </div>  
+        <div id="main">
+        <section id="about-me">
+            <h1 style="color:#4aaaa5;">About Me</h1>   
+            <img id="picture" src="#" alt="profile pic">
+            <p>My name is Josiah Pham and I'm on my journey to become a coder. Currently, I'm working part time at Mt. SAC up in Walnut, CA as an Adjunct ESL professor.
             If this coding boot camp works out I hope to find a job here in Orange County but I'm also open to work in other cities.</p>
-        
+            </br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima, explicabo placeat id asperiores, dolore maxime voluptatum iusto accusamus quibusdam eius! Quidem iure sunt harum fugiat in, unde ipsam saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur, numquam porro iure deserunt aliquam excepturi reprehenderit officia quae impedit ullam eum nulla voluptates repellat. Dicta explicabo incidunt est dignissimos.
+            </p>
+        </section>
 
-        
+         <section id="sidebar">
+            <h2 style="color:#4aaaa5;">Connect with Me</h2>
+            <a href="https://github.com/jphamxuan"> <img id="github" src="./assests/github.png"alt="github" style="width:50px;height:50px;"></a>
+            &nbsp&nbsp&nbsp<a href="https://www.linkedin.com/in/josiah-pham-b88a04155/"><img id="portfolio" src="./assests/linkedin.png"alt="github" style="width:50px;height:50px;"></a>
+            &nbsp&nbsp&nbsp <a href="https://github.com/jphamxuan"><img id="stack" src="./assests/stackoverflow.svg"alt="github" style="width:50px;height:50px;"></a>
+            
+        </section>
 
-        
+        </div>
             <footer>
 
                 
